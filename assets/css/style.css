@@ -707,7 +707,7 @@ footer
 
     .headerRight i 
     {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .headerLeft h2 
@@ -752,7 +752,6 @@ footer
     background-color: var(--primary-color); 
     overflow-x: hidden; 
     padding-top: 60px; 
-    transition: 0.5s; 
     z-index: 50;
 }
 
@@ -1097,4 +1096,17 @@ td
 .button-59, .grand-total
 {
     font-weight: 400;
+}
+
+.headerLeft img 
+{
+    height: 90px;
+    margin-top: 5px;
+}
+
+.cancelbtn 
+{
+    background-color: rgb(161, 16, 16);
+    padding: 5px;
+    color: white;
 }
