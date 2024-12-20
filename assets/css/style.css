@@ -597,7 +597,7 @@ footer
 {
     .m-cart 
     {
-        display: block;
+        display: flex;
     }
 
     .cart-page 
