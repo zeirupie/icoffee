@@ -1203,3 +1203,11 @@ td
 {
     padding-bottom: 400px;
 }
+
+@media (max-width:835px)
+{
+    .m-cart 
+    {
+        display: flex;
+    }
+}
