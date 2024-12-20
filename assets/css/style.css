@@ -1150,7 +1150,7 @@ td
     padding: 30px;
     position: relative;
     padding-bottom: 70px;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 
