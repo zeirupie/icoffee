@@ -33,42 +33,49 @@
 
         <h1 class="sidenavh">Account</h1>
         <hr>
-        <a href="login.html" id="about_nav">Login</a>
-        <a href="register.html" id="coffee_navi" >Sign-Up</a>
+        <a href="login.php" id="about_nav">Login</a>
+        <a href="register.php" id="coffee_navi" >Sign-Up</a>
 
     </div>
 
     <div class="cont-account">
     
-        <div class="form-account">
+        <div class="form-account" style="margin-top:50px;padding-bottom:20px;padding-top:30px">
+        <form action="../../backend/register_account.php" method="POST">
             <h1>Create New Account</h1>
 
             <div class="divname">
                 <div class="fname">
-                    First Name <br>
-                    <input type="text">
+                    Full name <br>
+                    <input type="text" name="customer_name" required>
                 </div>
 
-                <div class="lname">
-                    Last Name <br>
-                    <input type="text">
-                </div>
+            </div>
+
+            <div style="margin-left:10px;margin-top:10px;">
+                    Gender:
+                    <p>
+                        <input type="radio" name="gender" value="male" style="margin-left:20px;" checked> Male  
+                    </p>
+                    <p>
+                        <input type="radio" name="gender" value="female" style="margin-left:20px;"> Female
+                    </p>
                 
             </div>
 
             <div class="long">
                  Email <br>
-                <input type="email">
+                <input type="email" name="email" required>
             </div>
 
             <div class="long">
                  Password <br>
-                <input type="password">
+                <input type="password" name="pass" required>
             </div>
 
             <div class="long">
                 Confirm password <br>
-               <input type="password">
+               <input type="password" name="confirm_pass" required>
            </div>
 
             <div class="div-button">
@@ -76,8 +83,9 @@
             </div>
 
 
-            <div class="have-acc">Already have an account? <a href="login.html">Login</a></div>
-        </div>
+            <div class="have-acc">Already have an account? <a href="login.php">Login</a></div>
+        </form>
+    </div>
 
 
 

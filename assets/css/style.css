@@ -235,7 +235,7 @@ header h2
 
 .coffees 
 {
-    background-image: url("../images/coffee-bg.jpg");
+    background-image: url("../images/coffee-bg1.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -616,9 +616,14 @@ footer
     {
         display: none;
     }
-    #bars 
+    #bars
     {
         display: flex;
+    }
+
+    .mt 
+    {
+        display: none;
     }
 
     .header-menu, .header-btns
@@ -1036,8 +1041,7 @@ td
 {
     display: flex;
     overflow: hidden;
-    width: 200px;
-    justify-content: center;
+    width: 300px;
     align-items: center;
 }
 
@@ -1193,10 +1197,17 @@ td
     margin-bottom: 10px
 }
 
-.m-cart-item, .m-cart-item img
+.m-cart-item
 {
-    width: 320px;
+    width: 120px;
     height: 150px;
+}
+
+.m-cart-item img
+{
+    width: 120px;
+    height: 150px;
+    margin: 0 auto;
 }
 
 .cart-page 
@@ -1210,4 +1221,128 @@ td
     {
         display: flex;
     }
+}
+
+.menu-profile
+{
+    background-color: white;
+    height: auto;
+    padding: 30px;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    width: 200px;
+    z-index: 30;
+}
+
+.menu-profile button
+{
+    padding: 7px;
+    width: 100%;
+}
+
+#profile_menu 
+{
+    display: none;
+}
+
+.profile 
+{
+    height: inherit;
+}
+
+.food-card form 
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.transaction-cont
+{
+    padding-bottom: 500px;
+    background-color: #eeeeee;
+}
+
+.transaction-cont h1 
+{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.transaction-cart 
+{
+    background-color: white;
+    height: auto;
+    width: 80%;
+    margin:auto;
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.transaction-cart span 
+{
+    font-weight: normal;
+}
+
+.transaction-cart button 
+{
+    background-color: #4A3000;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.transaction-cart h2 
+{
+    color: #4A3000;
+    margin-bottom: 20px;
+}
+
+.transaction-cart button:hover 
+{
+    background-color: #D2691E;
+}
+
+.orderetail-content
+{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.orderetail-content h2 
+{
+    color: #4A3000;
+}
+
+.orderetail-content h3 
+{
+    margin: 20px 0;
+}
+
+.OS 
+{
+    background-color: #dddddd;
+    width: 90%;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.img-content 
+{
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-content img
+{
+    width: 100%;
+    object-fit: contain;
 }

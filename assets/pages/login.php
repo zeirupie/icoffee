@@ -34,32 +34,35 @@
 
         <h1 class="sidenavh">Account</h1>
         <hr>
-        <a href="login.html" id="about_nav">Login</a>
-        <a href="register.html" id="coffee_navi" >Sign-Up</a>
+        <a href="login.php" id="about_nav">Login</a>
+        <a href="register.php" id="coffee_navi" >Sign-Up</a>
 
     </div>
 
     <div class="cont-account">
     
         <div class="form-account">
-            <h1>Login</h1>
+            <form action="../../backend/login.php" method="POST">
+                <h1>Login</h1>
 
-            <div class="long loginput">
-                Email <br>
-                <input type="email">
-            </div>
+                <div class="long loginput">
+                    Email <br>
+                    <input type="email" name="email" required>
+                </div>
 
-            <div class="long loginput">
-                Password <br>
-                <input type="password">
-            </div>
+                <div class="long loginput">
+                    Password <br>
+                    <input type="password" name="pass" required>
+                </div>
 
-            <div class="div-button">
-                <button class="button-39">Login</button>
-            </div>
+                <div class="div-button">
+                    <button class="button-39" name="login">Login</button>
+                </div>
 
 
-            <div class="have-acc">Don't have an account yet? <a href="register.html">Register</a></div>
+                <div class="have-acc">Don't have an account yet? <a href="register.php">Register</a></div>
+
+            </form>
         </div>
 
 

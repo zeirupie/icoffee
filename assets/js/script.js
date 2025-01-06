@@ -62,14 +62,49 @@ window.onscroll = function ()
     
 }
 
-function openNav() 
+const profile = document.getElementById("profile");
+const profile_menu = document.getElementById("profile_menu");
+
+profile.onpointerover= function()
 {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("mySidenav").style.boxShadow = " 0 0 0 1000px rgba(0, 0, 0, 0.5)"
+    if(profile_menu.style.display == "" || profile_menu.style.display == "none")
+    {
+        profile_menu.style.display = "block";
+        profile_menu.style.backgroundImage="url(images/category-1.jpg)";
+    }
+
 }
 
-function closeNav() 
+profile.onpointerleave= function()
 {
-    document.getElementById("mySidenav").style.boxShadow = " 0 0 0 0 rgba(0, 0, 0, 0.5)"
-    document.getElementById("mySidenav").style.width = "0";
+    profile_menu.style.display = "none";
+}
+
+profile_menu.onpointerover= function()
+{
+    if(profile_menu.style.display == "" || profile_menu.style.display == "none")
+    {
+        profile_menu.style.display = "block";
+        profile_menu.style.backgroundImage="url(images/category-1.jpg)";
+    }
+
+}
+
+profile_menu.onpointerleave= function()
+{
+    profile_menu.style.display = "none";
+}
+
+profile.onclick= function()
+{
+    if(profile_menu.style.display == "" || profile_menu.style.display == "none")
+    {
+        profile_menu.style.display = "block";
+        profile_menu.style.backgroundImage="url(images/category-1.jpg)";
+    }
+
+    else
+    {
+        profile_menu.style.display = "none";
+    }
 }
