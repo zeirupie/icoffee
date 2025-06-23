@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icoffee</title>
+
+    <link rel="stylesheet" href="./src/css/main.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <img src="./public/images/icoffeelogo-white.png">
+
+        <nav>
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Coffees</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <div class="auth-links">
+                    <!--Sign in-->
+                    <li class="signin"><a href="#signin">Sign In</a></li>
+                    <!--Sign up-->  
+                    <li class="signup"><a href="#signup">Sign Up</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hero section-->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-right">
+            <h1>Experience Premium Coffee Everyday</h1>
+            <p>We bring you the perfect cup of coffee everyday.</p>
+            <a href="#services" class="hero__btn">Explore Services 
+
+                <span class="icon-holder">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+
+                </span>
+
+            </a>
+        </div> 
+    </section>
+
+    <!--Product Category Section-->
+    <section class="product-category" data-aos="fade-up"
+     data-aos-duration="800">
+     <h3 class="section-title">Products</h3>
+     <h1>Explore our Products   </h1>
+        <div class="category">
+            <div class="category__card" data-aos="zoom-in">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"/>
+                </svg>
+                <h3 class="category__title">Coffees</h3>
+                <p class="category_description">Rich and smooth, our specialty coffees are crafted from expertly roasted beans.</p>
+                <img src="./public/images/coffees/coffe-1.jpg" class="category__img" alt="">
+    
+            </div>
+    
+            <div class="category__card" data-aos="zoom-in">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"/>
+                </svg>
+                <h3 class="category__title">Breads</h3>
+                <p class="category_description">Indulge in our freshly baked artisanal breads and delicious pastries.</p>
+                <img src="./public/images/foods/food-6.jpg" class="category__img" alt="">
+    
+            </div>
+    
+            <div class="category__card" data-aos="zoom-in">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"/>
+                </svg>
+                <h3 class="category__title">Merchandise</h3>
+                <p class="category_description">Discover unique gifts and accessories designed specifically for coffee lovers.</p>
+                <img src="./public/images/coffees/coffe-1.jpg" class="category__img" alt="" >
+    
+            </div>
+            
+        </div>
+    </section>
+
+    <!--About Us-->
+    <section class="about-us__section" data-aos="fade-up"
+     data-aos-duration="800">
+        <div class="about-us" >
+            <!--About Us Left Panel-->
+            <div class="panel leftPanel">
+                <h1>About us</h1>
+                <p>Welcome to Icoffe, your cozy haven for exceptional coffee, freshly baked breads, and unique merchandise. We're passionate about serving top-notch coffee, delicious treats, and creating a warm community space for friends and neighbors to gather.</p>
+            </div>
+
+            <!--About Us Right Panel-->
+            <img src="./public/images/about-0.png" alt="" class="panel rightPanel" data-aos="zoom-in" data-aos-duration="1100">
+          
+        </div>
+    </section>
+
+    <!--Best Selling Coffee Section-->
+    <section class="best-coffee__section" data-aos="fade-up"
+     data-aos-duration="800">
+
+        <h3 class="section-title">Best Selling Coffees</h3>
+        <h1>Top Picks From Our Customers</h1>
+
+
+        <div class="best-coffee">
+            <div class="best-coffee__card" data-aos="fade-up">
+                <img src="./public/images/coffees/coffe-1.jpg" alt="" class="best-coffee__img">
+
+                <h3 class="best-coffee__name">Product name</h3>
+                <h3 class="best-coffee_price">80.0</h3>
+
+                <a href="" class="best-coffee__btn">
+                    
+                    <svg style="color: white;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    
+                    Order now
+                </a>
+            </div>
+
+            <div class="best-coffee__card" data-aos="fade-up">
+                <img src="./public/images/coffees/coffe-2.webp" alt="" class="best-coffee__img">
+
+                <h3 class="best-coffee__name">Product name</h3>
+                <h3 class="best-coffee_price">80.0</h3>
+
+                <a href="" class="best-coffee__btn">
+                    
+                    <svg style="color: white;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    
+                    Order now
+                </a>
+            </div>
+
+            <div class="best-coffee__card" data-aos="fade-up">
+                <img src="./public/images/coffees/coffe-3.webp" alt="" class="best-coffee__img">
+
+                <h3 class="best-coffee__name">Product name</h3>
+                <h3 class="best-coffee_price">80.0</h3>
+
+                <a href="" class="best-coffee__btn">
+                
+                    <svg style="color: white;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+
+                    Order now
+                </a>
+            </div>
+
+            <div class="best-coffee__card" data-aos="fade-up">
+                <img src="./public/images/coffees/coffe-4.jpg" alt="" class="best-coffee__img">
+
+                <h3 class="best-coffee__name">Product name</h3>
+                <h3 class="best-coffee_price">80.0</h3>
+
+                <a href="" class="best-coffee__btn">
+                
+                    <svg style="color: white;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+
+                    Order now
+                </a>
+            </div>
+
+            <div class="best-coffee__card" data-aos="fade-up">
+                <img src="./public/images/coffees/coffe-5.jpg" alt="" class="best-coffee__img">
+
+                <h3 class="best-coffee__name">Product name</h3>
+                <h3 class="best-coffee_price">80.0</h3>
+
+                <a href="" class="best-coffee__btn">
+                
+                    <svg style="color: white;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+
+                    Order now
+                </a>
+            </div>
+
+
+            <div class="best-coffee__card" data-aos="fade-up">
+                <img src="./public/images/coffees/coffe-6.avif" alt="" class="best-coffee__img">
+
+                <h3 class="best-coffee__name">Product name</h3>
+                <h3 class="best-coffee_price">80.0</h3>
+
+                <a href="" class="best-coffee__btn">
+                
+                    <svg style="color: white;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+
+                    Order now
+                </a>
+            </div>
+
+        </div>
+
+        <a href="" class="more-coffee__btn" >See all coffees 
+
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"/>
+            </svg>
+
+
+        </a>
+    </section>
+
+    <!--Contacts Section-->
+    <section class="contact-section" id="contact_section" data-aos="fade-up"
+     data-aos-duration="800">
+        <h3 class="section-title">Get in Touch</h3>
+
+        <div class="contact-cont">
+            <h1 class="con-text">Reach out to us for any questions or concerns</h1>
+
+            <div class="contact-two-cont">
+                <div class="contact-two order1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6429.326226011035!2d123.25404625092914!3d9.237339301304884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab67df3e7043bb%3A0x61b325c200a5cf7a!2sBacong%2C%20Negros%20Oriental!5e0!3m2!1sen!2sph!4v1734511430241!5m2!1sen!2sph" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+    
+                <div class="contact-two contact-text order2">
+                    
+                    <div class="contact-two-one" data-aos="fade-up">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h1>Loction:</h1>
+                            <p>Bacong City</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-two-one" data-aos="fade-up">
+                        <i class="fa fa-envelope"></i>
+                        <div>
+                            <h1>Email:</h1>
+                            <p>icoffee@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-two-one" data-aos="fade-up">
+                        <i class="fa fa-phone"></i>
+                        <div>
+                            <h1>Call:</h1>
+                            <p>+631234567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Footer Section-->
+    <footer>
+        <div class="copyright">
+            <p>© 2025 Icoffee.</p>
+        </div>
+    </footer>
+
+
+    <!--Customized AOS-->
+    <script>
+        AOS.init({
+            duration: 500,
+            offset: 100,    
+            once: true,     
+        });
+    </script>
+
+</body>
+</html>
