@@ -9,61 +9,194 @@ body {
   background-color: #F6F6F5;
 }
 
-header {
-  position: absolute;
+header, .proxy-header {
+  position: fixed;
   inset: 0 0 auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
   text-align: center;
+  height: 80px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 20;
+}
+header img, .proxy-header img {
   height: 100px;
 }
-header img {
-  height: 100px;
-}
-header ul {
+header ul, .proxy-header ul {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 20px;
 }
-header ul li a {
+header ul li a, .proxy-header ul li a {
   text-decoration: none;
   font-size: 18px;
   color: white;
   font-weight: bold;
 }
-header ul li a:hover {
+header ul li a:hover, .proxy-header ul li a:hover {
   color: #aaaaaa;
 }
-header ul .auth-links {
+header ul .auth-links, .proxy-header ul .auth-links {
   display: flex;
   gap: 10px;
 }
-header ul .auth-links .signin {
-  border: solid 1px #806d49;
+header ul .auth-links .signin, .proxy-header ul .auth-links .signin {
+  border: solid 1px #52300f;
   padding: 5px 10px;
 }
-header ul .auth-links .signup {
-  background-color: #806d49;
+header ul .auth-links .signin:hover, .proxy-header ul .auth-links .signin:hover {
+  color: white;
+}
+header ul .auth-links .signup, .proxy-header ul .auth-links .signup {
+  background-color: #52300f;
   padding: 5px 10px;
   border-radius: 5px;
 }
-header ul .auth-links .signup a {
+header ul .auth-links .signup a, .proxy-header ul .auth-links .signup a {
   color: white;
   text-decoration: none;
 }
-header ul .auth-links .signup:hover {
-  background-color: #605136;
+header ul .auth-links .signup:hover, .proxy-header ul .auth-links .signup:hover {
+  background-color: rgba(153, 85, 21, 0.9960784314);
 }
-header ul .auth-links .signup svg {
+header ul .auth-links .signup svg, .proxy-header ul .auth-links .signup svg {
   width: 20px;
   height: 20px;
   fill: rgb(62, 0, 0);
 }
-header ul .auth-links .signup svg:hover {
+header ul .auth-links .signup svg:hover, .proxy-header ul .auth-links .signup svg:hover {
   margin-right: -15px;
+}
+header .menu-toggle, .proxy-header .menu-toggle {
+  display: none;
+}
+header .menu-toggle svg, .proxy-header .menu-toggle svg {
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.temp-header {
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+.temp-header ul li a {
+  color: rgb(48, 48, 48);
+}
+.temp-header ul li a:hover {
+  color: rgba(153, 85, 21, 0.9960784314);
+}
+.temp-header ul .auth-links .signin {
+  border: solid 1px #52300f;
+}
+.temp-header ul .auth-links .signup {
+  background-color: #52300f;
+}
+.temp-header ul .auth-links .signup:hover {
+  background-color: white;
+}
+.temp-header .menu-toggle svg {
+  color: rgb(23, 23, 23);
+  background-color: transparent;
+}
+
+.modal {
+  background-color: whitesmoke;
+  position: fixed;
+  inset: 0 0 0 0;
+  width: 100%;
+  z-index: 30;
+  display: none;
+}
+.modal--menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+.modal--menu span {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+  z-index: 35;
+}
+.modal--menu span:hover {
+  color: black;
+}
+.modal--menu img {
+  height: 80px;
+}
+.modal--menu nav {
+  width: 100%;
+  border-top: 3px solid rgb(215, 211, 211);
+  text-align: center;
+}
+.modal--menu nav ul {
+  list-style-type: none;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal--menu nav ul a {
+  margin-bottom: 5px;
+  border-radius: 25px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.modal--menu nav ul a li {
+  background-color: rgb(218, 217, 217);
+  padding: 10px;
+  color: rgb(68, 68, 68);
+}
+.modal--menu nav ul a li:hover {
+  color: black;
+}
+.modal--menu .auth-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid rgb(215, 211, 211);
+  margin-top: 30px;
+}
+.modal--menu .auth-links a {
+  margin-bottom: 5px;
+  border-radius: 25px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+}
+.modal--menu .auth-links .signin {
+  background-color: transparent;
+  border: solid 1px #52300f;
+  padding: 10px;
+  margin-top: 10px;
+  color: black;
+}
+.modal--menu .auth-links .signin:hover {
+  background-color: #f6e5c8;
+}
+.modal--menu .auth-links .signup {
+  background-color: #52300f;
+  border: solid 1px #52300f;
+  padding: 10px;
+  margin-top: 5px;
+  color: white;
+}
+.modal--menu .auth-links .signup:hover {
+  background-color: rgba(153, 85, 21, 0.9960784314);
 }
 
 .hero {
@@ -179,6 +312,14 @@ header ul .auth-links .signup svg:hover {
   background-color: #806d49;
   padding: 50px 30px;
   padding-bottom: 0;
+  position: relative;
+}
+.about-us__section .decor-beans {
+  display: none;
+  position: absolute;
+  height: 180px;
+  top: -70px;
+  right: 20px;
 }
 .about-us__section .about-us {
   padding: 0 50px;
@@ -258,9 +399,6 @@ header ul .auth-links .signup svg:hover {
   justify-content: center;
   align-items: center;
 }
-.best-coffee__section .best-coffee__card .best-coffee__btn svg {
-  margin-right: 5px;
-}
 .best-coffee__section .best-coffee__card .best-coffee__btn:hover {
   background-color: rgba(153, 85, 21, 0.9960784314);
 }
@@ -276,8 +414,23 @@ header ul .auth-links .signup svg:hover {
   text-align: center;
   margin-top: 20px;
 }
+.best-coffee__section .more-coffee__btn .icon-holder {
+  margin-right: 25px;
+  position: relative;
+}
+.best-coffee__section .more-coffee__btn .icon-holder svg {
+  position: absolute;
+  right: -30px;
+  background-color: white;
+  color: #806d49;
+  font-weight: bold;
+  border-radius: 50%;
+}
 .best-coffee__section .more-coffee__btn:hover {
   background-color: rgba(153, 85, 21, 0.9960784314);
+}
+.best-coffee__section .more-coffee__btn:hover svg {
+  right: -35px;
 }
 
 .contact-section {
@@ -347,14 +500,17 @@ footer .copyright p {
 }
 
 @media (max-width: 800px) {
-  header {
+  header, .proxy-header {
     padding: 20px;
   }
-  header img {
+  header img, .proxy-header img {
     height: 90px;
   }
-  header ul li {
+  header ul li, .proxy-header ul li {
     display: none;
+  }
+  header .menu-toggle, .proxy-header .menu-toggle {
+    display: block;
   }
   .hero {
     height: 500px;
@@ -371,6 +527,9 @@ footer .copyright p {
     padding: 30px 0;
     gap: 20px;
     flex-direction: column;
+  }
+  .about-us__section .decor-beans {
+    display: block;
   }
   .about-us__section .about-us {
     padding: 50px 0;
@@ -398,6 +557,9 @@ footer .copyright p {
   }
   .contact-section {
     padding: 70px 10px;
+  }
+  .contact-section .con-text {
+    padding-bottom: 30px;
   }
   .contact-section .contact-two-cont {
     grid-template-columns: repeat(1, 1fr);
