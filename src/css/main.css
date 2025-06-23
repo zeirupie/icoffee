@@ -266,6 +266,7 @@ header ul .auth-links .signup svg:hover {
 }
 .best-coffee__section .more-coffee__btn {
   background-color: #52300f;
+  margin-top: 20px;
   color: white;
   width: 80%;
   font-size: 20px;
@@ -273,6 +274,7 @@ header ul .auth-links .signup svg:hover {
   border-radius: 10px;
   text-decoration: none;
   text-align: center;
+  margin-top: 20px;
 }
 .best-coffee__section .more-coffee__btn:hover {
   background-color: rgba(153, 85, 21, 0.9960784314);
@@ -394,15 +396,19 @@ footer .copyright p {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
+  .contact-section {
+    padding: 70px 10px;
+  }
   .contact-section .contact-two-cont {
     grid-template-columns: repeat(1, 1fr);
   }
   .contact-section .contact-two-cont iframe {
-    width: 100%;
     height: 400px;
     margin: auto;
+    border-radius: 15px;
   }
   .contact-section .contact-two-cont .contact-two {
-    width: 300px;
+    width: 100%;
+    padding: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
